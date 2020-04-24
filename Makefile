@@ -10,6 +10,7 @@ POSTER_FILES =  myMacros.tex \
 	$(wildcard bst/biblatex-sp-unified/[^.]*)
 
 test_poster:
+	rm -fr test
 	mkdir test
 	cd test; mkdir poster-template
 	cp -r --parents $(POSTER_FILES) test/poster-template
@@ -21,6 +22,7 @@ test_poster:
 			latexmk -pdf poster-template.tex
 
 release_poster:
+	rm -fr temp
 	mkdir temp
 	cd temp; mkdir poster-template
 	cp -r --parents $(POSTER_FILES) temp/poster-template
