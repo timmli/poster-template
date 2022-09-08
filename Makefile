@@ -7,7 +7,8 @@ POSTER_FILES =  myMacros.tex \
 	graphics/hhu-logo-hres.pdf \
 	$(wildcard packages/*.sty) \
 	poster-examples.tex  \
-	$(wildcard bst/biblatex-sp-unified/[^.]*)
+  muss.bbx \
+	muss.cbx
 
 test_poster:
 	rm -fr test
